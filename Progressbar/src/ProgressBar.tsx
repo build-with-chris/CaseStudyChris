@@ -46,10 +46,10 @@ export default function ProgressBar({ cartValue }: ProgressBarProps) {
     const bottomText = getBottomText(cartValue);
 
     return (
-      <div className="bg-[#F0F4F6] p-5 text-center">
+      <div className="bg-[#F0F4F6] p-10 text-center">
         
         <p className="p-1 text-md mb-4 text-primary/50" >{topText}</p>
-        <Progress value={progress} />
+        <Progress value={progress} cartValue={cartValue} />
         {bottomText && 
         (<p className="p-1 text-md mt-4 text-primary/50">{bottomText}</p>)
         }
