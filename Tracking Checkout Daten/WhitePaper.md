@@ -57,7 +57,7 @@ if (window.Shopify && Shopify.customer_consent.analytics === true) {
     });
   });
 }
-</script>```
+</script>liquid```
 
 ## 4. DSGVO & Enhanced Conversions im Health-Kontext
 
