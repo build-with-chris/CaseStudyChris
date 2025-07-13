@@ -49,7 +49,7 @@ export default function ProgressBar({ cartValue }: ProgressBarProps) {
     
 
     return (
-      <div className="bg-[#F0F4F6] p-10 text-center">
+      <div className="p-10 text-center">
         
         <p className="p-1 text-md mb-4 text-primary/50" >{topText}</p>
         <div className="relative">

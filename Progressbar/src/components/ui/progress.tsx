@@ -22,7 +22,7 @@ function Progress({
      
       <ProgressPrimitive.Indicator
         data-slot="progress-indicator"
-        className="bg-[#002F6C] h-full w-full flex-1 transition-all"
+        className={`${cartValue >= 25 ? "bg-green-600" : "bg-[#002F6C]"} h-full w-full flex-1 transition-all`}
         style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
       />
     </ProgressPrimitive.Root>
