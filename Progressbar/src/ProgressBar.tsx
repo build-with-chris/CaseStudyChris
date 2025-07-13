@@ -10,9 +10,9 @@ const GIFT = 75
 
 function calculateProgress(cartValue: number){
     if (cartValue <= FREE_SHIPPING) {
-        return (cartValue/ FREE_SHIPPING) * 50
+        return (cartValue/ FREE_SHIPPING) * 25
     } else if (cartValue < GIFT) {
-        return 50 + ((cartValue - FREE_SHIPPING) / (GIFT - FREE_SHIPPING)) * 50 
+        return 25 + ((cartValue - FREE_SHIPPING) / (GIFT - FREE_SHIPPING)) * 75
     } else {
         return 100;
     }
@@ -55,7 +55,7 @@ export default function ProgressBar({ cartValue }: ProgressBarProps) {
         <div className="relative">
   
             <PostIcon
-              className={`absolute left-[50%] top-1/2 w-11 h-11 transform -translate-x-1/2 -translate-y-1/2 z-10 ${
+              className={`absolute left-[25%] top-1/2 w-11 h-11 transform -translate-x-1/2 -translate-y-1/2 z-10 ${
                 cartValue >= 25 ? "text-green-600 fill-green-600" : "text-gray-400 fill-gray-400"
               }`}
             />
