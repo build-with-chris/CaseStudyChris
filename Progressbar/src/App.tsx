@@ -1,4 +1,4 @@
-import ProgressBar from "./ProgressBar.tsx"
+import ProgressBar from "./components/Progressbar/ProgressBar.tsx"
 import { useState } from "react"
 
 
