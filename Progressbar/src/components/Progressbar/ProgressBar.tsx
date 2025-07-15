@@ -22,7 +22,6 @@ export default function ProgressBar({ cartValue }: ProgressBarProps) {
 
     return (
       <div className="p-10 text-center">
-        
         <p
           className={`p-1 text-xl mb-4 ${
             cartValue >= 75 ? 'text-green-600' : 'text-primary/50'
@@ -33,19 +32,18 @@ export default function ProgressBar({ cartValue }: ProgressBarProps) {
         <div className="relative">
   
             <PostIcon
-              className={`absolute left-[25%] top-1/2 w-11 h-11 transform -translate-x-1/2 -translate-y-1/2 z-10 ${
+              className={`absolute left-[33%] top-1/2 w-11 h-11 transform -translate-x-1/2 -translate-y-1/2 z-10 ${
                 cartValue >= 25 ? "text-green-600 fill-green-600" : "text-gray-400 fill-gray-400"
               }`}
             />
 
-      
             <PresentIcon
               className={`absolute left-[100%] top-1/2 w-11 h-11 transform -translate-x-1/2 -translate-y-1/2 z-10 ${
                 cartValue >= 75 ? "text-green-600 fill-green-600" : "text-gray-400 fill-gray-400"
               }`}
             />
 
-        <Progress value={progress} cartValue={cartValue} />
+          <Progress value={progress} cartValue={cartValue} />
 
         </div>
         {bottomText && 

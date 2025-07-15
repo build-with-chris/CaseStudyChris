@@ -1,5 +1,7 @@
 import * as React from "react";
 
+/* I got the Icons from your website via the dev tools ;) */
+
 const PresentIcon = ({ className }: { className?: string }) => (
   <svg
     className={className}
